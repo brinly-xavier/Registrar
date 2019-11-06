@@ -14,7 +14,7 @@ Registrar Assignment: 04
 using namespace std;
 
 Student::Student(int waitTime){
-    windTime = waitTime;
+    //windTime = waitTime;
 }
 Student::~Student(){
     

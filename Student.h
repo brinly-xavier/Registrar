@@ -15,7 +15,9 @@ class Student
 {
   public:
   Student(int waitTime);
-  int windTime;
+  unsigned int timeLeftWindow;
+  unsigned int timeEnterQueue;
+  unsigned int timeLeftQueue;
   int waitTime;
   ~Student();
 };

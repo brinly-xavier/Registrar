@@ -16,11 +16,14 @@ using namespace std;
 class Registrar
 {
   public:
+  Window* windowArray;
+  Window window;
   GenQueue<Student*> studentQueue;
-  GenQueue<Window*> windowQueue;
+  //GenQueue<Window*> windowQueue;
   Registrar(string fileLocation);//constructor
   Inputer* fCheck;
   int openWindow;
+  int numWindows;
   int time = 0;
   void SocialConstruct();
   void mWindows();

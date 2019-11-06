@@ -94,11 +94,12 @@ Registrar Assignment: 04
             size--;
             return tmp;
         }
+        
         template <class T>
         void DoublyLinkedList<T>::insertBack(T d){
             
             ListNode<T>  *node = new ListNode<T>(d);
-            cout<<"the size is: "<<size<<endl;
+           // cout<<"the size is: "<<size<<endl;
             if(isEmpty())//empty List
             {
             //we have an empty list
@@ -108,7 +109,7 @@ Registrar Assignment: 04
             else
             {
             //not an empty List
-                cout << "THe list is not empty\n";
+                //cout << "THe list is not empty\n";
                 back->next = node;
                 node->prev = back;
             }

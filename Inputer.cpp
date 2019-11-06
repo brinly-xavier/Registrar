@@ -42,7 +42,7 @@ void Inputer::fCheck(string fileLocation){
     while(getline(fileLoc, line)){
         fileQueue->insert(stoi(line));
     }
-    cout<<"gen wubew : "<<fileQueue->peek()<<endl;
+    //cout<<"gen wubew : "<<fileQueue->peek()<<endl;
     cout<<"\n"<<endl;
     fileLoc.close();  
 

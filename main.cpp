@@ -11,6 +11,7 @@ Registrar Assignment: 04
 #include "Student.h"
 #include "GenQueue.h"
 #include "Registrar.h"
+#include "Window.h"
 
 using namespace std;
 
@@ -29,8 +30,26 @@ int main(int argc, char ** argv){
     try{
       Inputer inp(fileLocation);
       Registrar registrar = Registrar (fileLocation);
-      Student student = Student(2);
+
+      for(int i = 0; i < 4; ++i){
+        registrar.SocialConstruct();
+      }
       cout<<"All of the syntax is good."<<endl;
+      //the stats
+      unsigned int totalIdle = 0;
+      longIdle = 0;
+      for(int i = 0; i < registrar.numWindows; ++i){
+        totalIdle += registrar.windowArray[i].idleTime;
+
+        if(longIdle < registrar.windowArray[i].idleTime){
+          longIdle = registrar.windowArray[i].idleTime;
+        }
+
+        if(registrar.windowArray[i].idleTime > 5){
+          overFive++;
+        }
+      }
+      idle = totalIdle / registrar.numWindows;
    }
     catch(runtime_error e){
       //this runtime error ends the program once the first error is detected
