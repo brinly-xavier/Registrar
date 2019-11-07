@@ -20,6 +20,8 @@ class Statistics
   public:
     Statistics(Registrar *registrar);
     Registrar* registrar;
+    void doTheMath();
+    //the variables
     unsigned int mean;
     unsigned int median;
     unsigned int big = 0;
@@ -27,6 +29,6 @@ class Statistics
     float idle;
     float longIdle;
     int overFive;
-    void doTheMath();
+    
 
 };

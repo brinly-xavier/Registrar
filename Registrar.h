@@ -21,9 +21,10 @@ class Registrar
   Window* windowArray;
   Window window;
   GenQueue<Student*> studentQueue;
-  //GenQueue<Window*> windowQueue;
   Registrar(string fileLocation);//constructor
   Inputer* fCheck;
+  
+  //the variables
   int openWindow;
   int numWindows;
   int time = 0;

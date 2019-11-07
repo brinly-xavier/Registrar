@@ -16,12 +16,15 @@ Registrar Assignment: 04
 
 using namespace std;
 Statistics::Statistics(Registrar* registrar){
+    //this will get the stats based on the registrar it is working on
     this->registrar = registrar;
 }
 
 void Statistics::doTheMath(){
+    //this performs the math based on the time stamps stored throughout the simulation
       unsigned int totalIdle = 0;
       longIdle = 0;
+    //the stats for when the windows are idle
       for(int i = 0; i < registrar->numWindows; ++i){
         totalIdle += registrar->windowArray[i].idleTime;
 
@@ -38,7 +41,7 @@ void Statistics::doTheMath(){
 
       unsigned int totalWaitTime = 0;
       unsigned int waitTime = 0;
-
+    //the stats for the students waiting in the line
       for(int i = 0; i < registrar->numWindows; ++i){
        //waitTime = registrar->studentQueue->timeEnterQueue - registrar->studentQueue->timeEnterWindow;
         totalWaitTime += waitTime;
@@ -52,6 +55,7 @@ void Statistics::doTheMath(){
         }
       }
       mean = totalWaitTime / registrar->numWindows;
+      //the output of the statistics
       cout<<"The mean student wait time: "<<mean<<endl;
       cout<<"The median student wait time: "<<median<<endl;
       cout<<"The longest student wait time: "<<big<<endl;

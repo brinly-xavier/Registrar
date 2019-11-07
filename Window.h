@@ -18,18 +18,19 @@ class Window
   Student* student;
 
   public:
-  //int numWindows;
+
   Window();
-  ~Window();
-  //GenQueue<int> *idleQueue;
-  //GenQueue<int> *waitQueue;
   void receiveStudents(Student* nStudent);
   Student* removeStudents();
   void timeInt();
   void notOccupied();
+
   //the variables
+  
+  //the booleans for the windows are set
   bool satis;
   bool atWindow;
+  // these variables are for the time
   int idleTime;
   int windTime;
 };

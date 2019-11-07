@@ -16,11 +16,13 @@ class Student
 {
   public:
   Student(unsigned int stWindowTime);
+
+  //the variables 
+
+  //this looks at if something is at the window
   bool atWindow;
   unsigned int timeExit;
   unsigned int timeEnterQueue;
   unsigned int timeEnterWindow;
   unsigned int desiredTime;
-  //int waitTime;
-  ~Student();
 };

@@ -28,7 +28,7 @@ void Inputer::fCheck(string fileLocation){
     fileLoc.open(fileLocation);
     if (fileLoc.is_open())
     {
-        cout<< "File successfully open\n"<<endl;
+        cout<< "File successfully open"<<endl;
     }
     else
     {
@@ -39,7 +39,6 @@ void Inputer::fCheck(string fileLocation){
     while(getline(fileLoc, line)){
         fileQueue->insert(stoi(line));
     }
-    cout<<"\n"<<endl;
     fileLoc.close();  
 
 }
