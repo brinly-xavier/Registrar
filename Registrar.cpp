@@ -17,37 +17,32 @@ Registrar Assignment: 04
 
 using namespace std;
 
+//The constructor
 Registrar::Registrar(string fileLocation){
+    //this reads the file 
     fCheck = new Inputer(fileLocation);
+    //the number of windows is removed from the file queue
     numWindows = fCheck->fileQueue->remove();
-    cout<<"Number of Windows Open: "<<numWindows<<endl;
+    //the array for the window is created
     mWindows();
-    //SocialConstruct();
 }
 void Registrar::SocialConstruct(){
     for(int i = 1; i < numWindows +1; ++i){
-        //cout<<"aple"<<endl;
-        cout<<"WIndow: " << i<<endl;
-        windowArray[i].timeInt();
-       // cout<<i<<endl;
+        if(window.atWindow == true){
+            windowArray[i].timeInt();
+        }
+        //the time starts when the windows are created
         
       }
     if(window.satis == true){
         while(studentQueue.getSize() != 0){
-            //cout<<"apl2e"<<endl;
+            //the student object is created for the students in the queue
             window.receiveStudents(studentQueue.remove());
         }
         
     }
-    //if(window.satis == false){
-      //  while(studentQueue.getSize() != 0){
-        //    cout<<"apl2e"<<endl;
-            //window.notOccupied();
-        //}
-        
-    //}
         cout<<"The current time is: "<<time<<endl;
-        mStudents();
+        mStudents();  
         time++;  
 }
 
@@ -66,6 +61,7 @@ void Registrar::mStudents(){
             cout<<"\n"<<endl;
     }
 }
+
 void Registrar::mWindows(){   
     windowArray = new Window[numWindows];
 }

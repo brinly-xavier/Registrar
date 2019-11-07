@@ -13,17 +13,14 @@ Registrar Assignment: 04
 using namespace std;
 
 ifstream fileLoc;
-//constructor
 
+//constructor
 Inputer::Inputer(string fileLocation){
+    //this queue stores all the contents in the file
     fileQueue = new GenQueue<int>();
     
     //this runs the check based on the file
     fCheck(fileLocation); 
-    }
-
-Inputer::~Inputer(){  
-    
 }
 
 void Inputer::fCheck(string fileLocation){
@@ -42,7 +39,6 @@ void Inputer::fCheck(string fileLocation){
     while(getline(fileLoc, line)){
         fileQueue->insert(stoi(line));
     }
-    //cout<<"gen wubew : "<<fileQueue->peek()<<endl;
     cout<<"\n"<<endl;
     fileLoc.close();  
 

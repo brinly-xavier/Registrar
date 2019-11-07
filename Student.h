@@ -9,15 +9,18 @@ Registrar Assignment: 04
 #pragma once
 #include <iostream>
 
+
 using namespace std;
 
 class Student
 {
   public:
-  Student(int waitTime);
-  unsigned int timeLeftWindow;
+  Student(unsigned int stWindowTime);
+  bool atWindow;
+  unsigned int timeExit;
   unsigned int timeEnterQueue;
-  unsigned int timeLeftQueue;
-  int waitTime;
+  unsigned int timeEnterWindow;
+  unsigned int desiredTime;
+  //int waitTime;
   ~Student();
 };

@@ -7,7 +7,7 @@ Registrar Assignment: 04
 */
 
 #include "Window.h"
-
+#include "Student.h"
 #include <iostream>
 #include <fstream>
 #include <string>
@@ -31,6 +31,19 @@ void Window::receiveStudents(Student* nStudent){
     atWindow = true;
     student = nStudent;
     windTime = 0;
+    student->timeEnterQueue++;
+}
+Student* Window::removeStudents(){
+    if(atWindow == true){  
+      //if(windTime ==  studentQueue->stWindowTime){
+        atWindow = false;
+        Student* tmpStudent = student;
+        student = NULL;
+        return tmpStudent;
+   // } 
+
+    }  
+    
 }
 void Window::timeInt(){
     if(atWindow == true){
@@ -38,6 +51,7 @@ void Window::timeInt(){
         cout<<"The window time is "<<windTime<<endl;
         windTime++;
         satis = true;
+        //student->timeEnterWindow++;
     }
     else{
         idleTime++;

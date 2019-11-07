@@ -21,8 +21,10 @@ class Window
   //int numWindows;
   Window();
   ~Window();
-  GenQueue<int> *idleQueue;
+  //GenQueue<int> *idleQueue;
+  //GenQueue<int> *waitQueue;
   void receiveStudents(Student* nStudent);
+  Student* removeStudents();
   void timeInt();
   void notOccupied();
   //the variables

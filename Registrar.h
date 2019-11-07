@@ -5,6 +5,8 @@ xavier@chapman.edu
 CPSC 350 -01
 Registrar Assignment: 04
 */
+#pragma once
+
 #include "GenQueue.h"
 #include "Inputer.h"
 #include "Student.h"

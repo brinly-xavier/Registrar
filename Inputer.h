@@ -16,7 +16,6 @@ class Inputer
 {
   public:
   Inputer(string fileLocation);//constructor
-  ~Inputer();//deconstructor
   //GenQueue <Window>* windowQueue; //the queue has the list of windows
   void fCheck(string fileLocation);//method does the checking
   GenQueue <int> *fileQueue;
