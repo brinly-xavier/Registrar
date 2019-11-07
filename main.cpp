@@ -24,6 +24,7 @@ int main(int argc, char ** argv){
     fileLocation = argv[1];  
 
     try{
+      cout<<"Welcome to the Registrar's Office"<<endl;
       //if the file is valid, it will perform all of the duties
       Inputer inp(fileLocation);
       //the registrar class will run based on the file

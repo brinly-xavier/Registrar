@@ -28,7 +28,7 @@ class Statistics
     unsigned int overTen;
     float idle;
     float longIdle;
-    int overFive;
+    unsigned int overFive;
     
 
 };

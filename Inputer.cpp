@@ -28,7 +28,7 @@ void Inputer::fCheck(string fileLocation){
     fileLoc.open(fileLocation);
     if (fileLoc.is_open())
     {
-        cout<< "File successfully open"<<endl;
+        cout<< "File successfully open\n"<<endl;
     }
     else
     {

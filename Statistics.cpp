@@ -62,6 +62,6 @@ void Statistics::doTheMath(){
       cout<<"The number of students waiting over 10 minutes: "<<overTen<<endl;
       cout<<"The mean window idle time: "<<idle<<endl;
       cout<<"The longest window idle time: "<<longIdle<<endl;
-      cout<<"Number of windows idle for over 5 minutes: "<<overFive<<endl;
+      cout<<"Number of windows idle for over 5 minutes: "<<overFive<<"\n"<<endl;
 
 }

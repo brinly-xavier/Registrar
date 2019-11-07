@@ -64,7 +64,6 @@ void Registrar::mStudents(){
             //these students are inserted in a student queue
             studentQueue.insert(student);
             } 
-            cout<<"\n"<<endl;
     }
 }
 
