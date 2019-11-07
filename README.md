@@ -18,6 +18,8 @@ j. Student.h
 k. test.txt
 l. Window.cpp
 m. Window.h
+n. Statistics.cpp
+o. Statistics.h
 
 
 A LIST OF ALL REFERENCES USED TO COMPLETE THE ASSIGNMENT, INCLUDING PEERS (IF APPLICABLE)
